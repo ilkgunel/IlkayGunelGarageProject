@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.ilkaygunel.vodafone.*"})
+@ComponentScan(basePackages = {"com.ilkaygunel.garage.project.*"})
 public class SpringBootApplicationClass {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootApplicationClass.class);

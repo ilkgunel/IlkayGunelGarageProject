@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "05f59d13-f7b4-4351-86ab-5f9ea61c5e10",
+		"name": "garageProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/GarageParkProject/park",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "c-session-id",
+						"value": "4919849005004750307",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "c-token",
+						"value": "614090CABB011939C54CBB2528FD259356F0753DF3AE18FE7D6E509873EDA924",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plate\":\"34-LO-2000\",\r\n    \"color\":\"White\",\r\n    \"vehicleType\":\"Car\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/GarageParkProject/park",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GarageParkProject",
+						"park"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/GarageParkProject/leave/6049501570842445007",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/GarageParkProject/leave/6049501570842445007",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GarageParkProject",
+						"leave",
+						"6049501570842445007"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/GarageParkProject/status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/GarageParkProject/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GarageParkProject",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
